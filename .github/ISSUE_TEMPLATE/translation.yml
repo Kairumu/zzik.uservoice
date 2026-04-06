@@ -1,6 +1,6 @@
-name: "Translation Improvement"
+name: "🌐 Translation Improvement"
 description: "Report a translation error or suggest improvements"
-title: "[Translation] "
+title: "🌐 [Translation] "
 labels: ["translation"]
 body:
   - type: dropdown

@@ -1,6 +1,6 @@
-name: "Feature Request"
+name: "💡 Feature Request"
 description: "Suggest a new feature for Zzik"
-title: "[Feature] "
+title: "💡 [Feature] "
 labels: ["feature"]
 body:
   - type: dropdown

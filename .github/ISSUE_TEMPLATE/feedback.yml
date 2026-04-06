@@ -1,6 +1,6 @@
-name: "General Feedback"
+name: "💬 General Feedback"
 description: "Share your thoughts about Zzik"
-title: "[Feedback] "
+title: "💬 [Feedback] "
 labels: ["feedback"]
 body:
   - type: dropdown

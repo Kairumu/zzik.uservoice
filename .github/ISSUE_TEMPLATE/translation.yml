@@ -1,0 +1,61 @@
+name: "Translation Improvement"
+description: "Report a translation error or suggest improvements"
+title: "[Translation] "
+labels: ["translation"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Affected Language"
+      description: "Which language has the translation issue?"
+      options:
+        - English
+        - 한국어
+        - 中文
+        - 日本語
+        - Русский
+        - ไทย
+        - Tiếng Việt
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Where did you see it?"
+      description: "Which part of Zzik has the translation issue?"
+      options:
+        - News headline
+        - Event title / summary
+        - Headline bulletin
+        - App interface (UI)
+        - Privacy policy
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: "Current Translation"
+      description: "What does it currently say? / 현재 어떻게 번역되어 있나요?"
+      placeholder: "The current text says..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested
+    attributes:
+      label: "Suggested Translation"
+      description: "What should it say instead? / 올바른 번역을 알려주세요."
+      placeholder: "It should say..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional Context"
+      description: "Any additional context about the translation issue. / 추가 설명이 있다면 적어주세요."
+    validations:
+      required: false

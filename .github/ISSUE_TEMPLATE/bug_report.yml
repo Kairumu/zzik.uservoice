@@ -1,0 +1,78 @@
+name: "Bug Report"
+description: "Report a bug or issue with Zzik"
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Language / 언어"
+      description: "Choose your preferred language"
+      options:
+        - English
+        - 한국어
+        - 中文
+        - 日本語
+        - Русский
+        - ไทย
+        - Tiếng Việt
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform"
+      description: "Where did you encounter the bug?"
+      options:
+        - Web (zzik.io)
+        - iOS
+        - Android
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: "Device / Browser"
+      description: "e.g., iPhone 15, Chrome 120, Galaxy S24"
+      placeholder: "Chrome 120 on macOS"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "What happened? / 어떤 문제가 발생했나요?"
+      placeholder: "Describe what went wrong..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "How can we reproduce this bug? / 재현 방법을 알려주세요."
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What should have happened? / 기대했던 동작은 무엇인가요?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots"
+      description: "If applicable, add screenshots. / 스크린샷이 있다면 첨부해 주세요."
+    validations:
+      required: false

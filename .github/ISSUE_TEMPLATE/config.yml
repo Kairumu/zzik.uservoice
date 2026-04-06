@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Zzik Website
+    url: https://zzik.io
+    about: "Visit the Zzik news service"
+  - name: Privacy Policy
+    url: https://zzik.io/privacy
+    about: "Read our privacy policy"

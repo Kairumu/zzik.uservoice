@@ -1,0 +1,59 @@
+name: "Feature Request"
+description: "Suggest a new feature for Zzik"
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Language / 언어"
+      description: "Choose your preferred language"
+      options:
+        - English
+        - 한국어
+        - 中文
+        - 日本語
+        - Русский
+        - ไทย
+        - Tiếng Việt
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform"
+      description: "Which platform is this for?"
+      options:
+        - Web (zzik.io)
+        - iOS
+        - Android
+        - All platforms
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Feature Description"
+      description: "Describe the feature you'd like to see. / 원하시는 기능을 설명해 주세요."
+      placeholder: "I would like..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: "Use Case"
+      description: "Why do you need this feature? / 이 기능이 필요한 이유를 알려주세요."
+      placeholder: "This would help me..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots / Mockups"
+      description: "If applicable, add screenshots or mockups. / 참고 이미지가 있다면 첨부해 주세요."
+    validations:
+      required: false

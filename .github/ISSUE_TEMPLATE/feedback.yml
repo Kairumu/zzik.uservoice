@@ -1,0 +1,59 @@
+name: "General Feedback"
+description: "Share your thoughts about Zzik"
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Language / 언어"
+      description: "Choose your preferred language"
+      options:
+        - English
+        - 한국어
+        - 中文
+        - 日本語
+        - Русский
+        - ไทย
+        - Tiếng Việt
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      description: "What area is your feedback about?"
+      options:
+        - User Interface / Design
+        - News Content / Coverage
+        - Translation Quality
+        - Globe / Map
+        - Chat
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: "Your Feedback"
+      description: "Tell us what you think! / 여러분의 의견을 자유롭게 들려주세요!"
+      placeholder: "I think..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: satisfaction
+    attributes:
+      label: "Overall Satisfaction"
+      description: "How satisfied are you with Zzik? / Zzik에 대한 전반적인 만족도는?"
+      options:
+        - "Very satisfied"
+        - "Satisfied"
+        - "Neutral"
+        - "Dissatisfied"
+        - "Very dissatisfied"
+    validations:
+      required: false
